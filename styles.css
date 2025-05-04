@@ -1035,3 +1035,30 @@
     margin-top: 30px;
   }
 }
+
+/* Estilo responsive para la clase cv-download */
+.cv-download {
+    margin-top: 50px; /* Añade un espacio superior */
+    text-align: center; /* Centra los botones */
+    display: flex; /* Asegura que los elementos hijos estén en línea */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Añade separación entre los botones */
+}
+
+.cv-download .btn {
+    padding: 8px 12px; /* Reduce el tamaño horizontal de los botones */
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+}
+
+/* Ajustes adicionales para pantallas pequeñas */
+@media (max-width: 576px) {
+    .cv-download {
+        margin-top: 15px; /* Reduce el espacio superior en pantallas pequeñas */
+        gap: 8px; /* Ajusta la separación entre botones en pantallas pequeñas */
+    }
+
+    .cv-download .btn {
+        padding: 6px 10px; /* Reduce aún más el tamaño horizontal de los botones */
+        font-size: 12px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+}
